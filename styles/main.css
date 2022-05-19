@@ -2,23 +2,19 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100vh;
-}
-
 .container {
     position: relative;
-    width: 79.3%;
+    width: 100vw;
     margin: auto;
-    height: 1092.4%;
-    /* 5135px seems to work at 1.0 scale on laptop screen */
+    height: 5134px;
 }
 
 header {
     position: fixed;
     top: 0;
-    width: 79.3%;
-    height: 13.1%;
+    left: 0;
+    width: 100%;
+    height: 62px;
     background-color: blue;
     z-index: 10;
 }
@@ -27,37 +23,93 @@ header {
     display: flex;
 } */
 
-nav.top-left {
+.nav-align {
+    position: relative;
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+}
+
+.top-left {
     position: absolute;
     background: red;
     top: 0;
     left: 0;
     height: 100%;
-    width: 27.8%;
+    min-width: 320px;
 }
 
-nav.top-right {
+.top-right {
     position: absolute;
     background: red;
     top: 0;
     right: 0;
     height: 100%;
-    min-width: 13.8%;
+    min-width: 160px;
 }
 
 main {
     background: yellow;
     position: relative;
-    margin-top: 9.7%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 1140px;
+    margin: auto;
+    margin-top: 111px;
+    height: 4880px;
 }
 
 main > article {
     background-color: green;
     position: relative;
-    width: 65.85%;
-    height: 17.95%;
-    /* NEXT STEP margin bottom */
-    margin-bottom: 5%;
+    width: 750px;
+    min-height: 920px;
+    margin-bottom: 50px;
     /* 1px grey border on articles */
+}
+
+main > aside {
+    background-color: aqua;
+    position: relative;
+    width: 360px;
+}
+
+.author {
+    height: 509px;
+    margin-bottom: 40px;
+}
+
+.popular-posts {
+    height: 982px;
+    margin-bottom: 40px;
+}
+.latest-posts {
+    height: 514px;
+    margin-bottom: 40px;
+}
+.instagram-feed {
+    height: 594px;
+    margin-bottom: 40px;
+}
+
+
+/* .author {
+    background-color: aqua;
+    position: relative;
+    width: 200px;
+    height: 200px;
+} */
+
+.bottom-images {
+    position: relative;
+    background-color: orange;
+    height: 189px;
+}
+
+footer {
+    position: relative;
+    background-color: purple;
+    height: 65px;
 }
