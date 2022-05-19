@@ -1,0 +1,63 @@
+.container, header {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 79.3%;
+    margin: auto;
+    height: 1092.4%;
+    /* 5135px seems to work at 1.0 scale on laptop screen */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 79.3%;
+    height: 13.1%;
+    background-color: blue;
+    z-index: 10;
+}
+
+/* ul {
+    display: flex;
+} */
+
+nav.top-left {
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 27.8%;
+}
+
+nav.top-right {
+    position: absolute;
+    background: red;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 13.8%;
+}
+
+main {
+    background: yellow;
+    position: relative;
+    margin-top: 9.7%;
+    height: 100%;
+}
+
+main > article {
+    background-color: green;
+    position: relative;
+    width: 65.85%;
+    height: 17.95%;
+    /* NEXT STEP margin bottom */
+    margin-bottom: 5%;
+    /* 1px grey border on articles */
+}
