@@ -145,14 +145,18 @@ main > article:nth-child(2) {
     min-height: 921px;
 }
 
-main > article > img {
-    margin-bottom: 41px;
+main > article > .content {
+    position: relative;
+    width: 672px;
+    height: 360px;
+    margin: 41px auto;
+    border: 1px solid black;
 }
 
-main > article > h3 {
+main > article > .content > h3 {
     position: relative;
     display: block;
-    margin: 0px auto 13px;
+    margin: 0px auto;
     width: fit-content;
     font-family: 'Lato';
     font-weight: 700;
@@ -161,14 +165,24 @@ main > article > h3 {
     color: #CF3D25;
 }
 
-main > article > h2 {
+main > article > .content > h2 {
     position: relative;
     display: block;
-    margin: 0px auto 10px;
+    margin: 13px auto 0;
     width: fit-content;
     font-family: 'Oswald';
     font-weight: 700;
     font-size: 24px;
+}
+
+main > article > .content > p {
+    position: relative;
+    display: block;
+    margin: 25px auto 0;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.65;
 }
 
 main > aside {
