@@ -1,4 +1,4 @@
-.container, header {
+.container * {
     box-sizing: border-box;
 }
 
@@ -124,7 +124,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 1140px;
+    width: 1142px;
     margin: auto;
     margin-top: 111px;
     height: 4880px;
@@ -133,9 +133,10 @@ main {
 main > article {
     background-color: green;
     position: relative;
-    width: 750px;
+    width: 752px;
     min-height: 920px;
     margin-bottom: 50px;
+    border: 1px solid #E5E5E5;
     /* 1px grey border on articles */
 }
 
