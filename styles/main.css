@@ -145,6 +145,32 @@ main > article:nth-child(2) {
     min-height: 921px;
 }
 
+main > article > img {
+    margin-bottom: 41px;
+}
+
+main > article > h3 {
+    position: relative;
+    display: block;
+    margin: 0px auto 13px;
+    width: fit-content;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #CF3D25;
+}
+
+main > article > h2 {
+    position: relative;
+    display: block;
+    margin: 0px auto 10px;
+    width: fit-content;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 24px;
+}
+
 main > aside {
     background-color: aqua;
     position: relative;
@@ -152,33 +178,24 @@ main > aside {
     border: 1px solid #E5E5E5;
     border-radius: 1px;
     box-shadow: 0 0 1px 1px #ECECEC;
+    margin-bottom: 38px;
 }
 
 .author {
     height: 510px;
-    margin-bottom: 38px;
 }
 
 .popular-posts {
     height: 984px;
-    margin-bottom: 38px;
 }
 .latest-posts {
     height: 516px;
-    margin-bottom: 38px;
 }
 .instagram-feed {
     height: 596px;
-    margin-bottom: 40px;
 }
 
 
-/* .author {
-    background-color: aqua;
-    position: relative;
-    width: 200px;
-    height: 200px;
-} */
 
 .bottom-images {
     position: relative;
