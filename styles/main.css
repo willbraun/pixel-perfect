@@ -3,10 +3,11 @@
 }
 
 .container {
-    position: relative;
+    position: absolute;
     width: 100vw;
     margin: auto;
     height: 5134px;
+    background-color: #F1F1F1;
 }
 
 header {
@@ -118,7 +119,7 @@ li {
 }
 
 main {
-    background: yellow;
+    /* background: yellow; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -137,30 +138,37 @@ main > article {
     min-height: 922px;
     margin-bottom: 48px;
     border: 1px solid #E5E5E5;
-    /* 1px grey border on articles */
+    border-radius: 1px;
+}
+
+main > article:nth-child(2) {
+    min-height: 921px;
 }
 
 main > aside {
     background-color: aqua;
     position: relative;
-    width: 360px;
+    width: 362px;
+    border: 1px solid #E5E5E5;
+    border-radius: 1px;
+    box-shadow: 0 0 1px 1px #ECECEC;
 }
 
 .author {
-    height: 509px;
-    margin-bottom: 40px;
+    height: 510px;
+    margin-bottom: 38px;
 }
 
 .popular-posts {
-    height: 982px;
-    margin-bottom: 40px;
+    height: 984px;
+    margin-bottom: 38px;
 }
 .latest-posts {
-    height: 514px;
-    margin-bottom: 40px;
+    height: 516px;
+    margin-bottom: 38px;
 }
 .instagram-feed {
-    height: 594px;
+    height: 596px;
     margin-bottom: 40px;
 }
 
