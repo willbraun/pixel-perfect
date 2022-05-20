@@ -158,7 +158,7 @@ main > article:nth-child(2) > .content {
 main > article > .content {
     position: relative;
     width: 670px;
-    height: 360px;
+    height: fit-content;
     margin: 41px auto;
 }
 
@@ -217,15 +217,21 @@ main > article > .content::after {
     content: '';
     position: absolute;
     display: block;
-    height: 1px;
+    height: 40px;
     width: 100%;
-    bottom: 42px;
-    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+
+main > article footer {
+    position: absolute;
+    width: 670px;
+    height: 20px;
+    bottom: 20px;
+    margin: auto;
 }
 
 main > article footer p {
     position: absolute;
-    bottom: 8px;
     font-family: 'Lato';
     font-weight: 400;
     font-size: 14px;
@@ -236,8 +242,8 @@ main > article footer p {
 
 .article-bottom-icons {
     position: absolute;
-    right: 0;
-    bottom: 1px;
+    top: 5px;
+    right: 0px;
     width: 139px;
     color: #B5B5B5;
 }
@@ -320,7 +326,39 @@ main > aside {
         right: 46px;
         transform: scale3d(1.58, 1.15, 1);
         color: #757575;
-        
-        
     }
+
+    main {
+        margin-top: 101px;
+        width: 472px;
+    }
+
+    main > article {
+        width: 100%;
+        height: fit-content;
+    }
+
+    main > article > img {
+        width: 100%;
+    }
+
+    main > article > .content {
+        width: 390px;
+        height: fit-content;
+        margin: 41px auto;
+    }
+
+    main > article > .content > h2 {
+        font-size: 21px;
+    }
+
+    main > article > .content > p {
+        line-height: 1.66;
+    }
+
+    /* main > article {
+        min-height
+    } */
+
+    /* main > aside */
 }
