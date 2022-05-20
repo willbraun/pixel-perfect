@@ -146,6 +146,11 @@ main > article:nth-child(2) {
     min-height: 921px;
 }
 
+main > article:nth-child(2) > .content {
+    margin: 40px auto 41px;
+}
+
+
 main > article > .content {
     position: relative;
     width: 670px;
@@ -171,8 +176,10 @@ main > article > .content > h2 {
     margin: 13px auto 0;
     width: fit-content;
     font-family: 'Oswald';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
+    color: #343434;
+    letter-spacing: 0.5px;
 }
 
 main > article > .content > p {
@@ -183,6 +190,7 @@ main > article > .content > p {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.67;
+    color: #343434;
 }
 
 button {
@@ -198,7 +206,7 @@ button {
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 1px;
-    padding: 0;
+    padding: 0 0 1px 0;
 }
 
 main > article > .content::after {
@@ -218,7 +226,7 @@ main > article footer p {
     font-weight: 400;
     font-size: 14px;
     font-style: italic;
-    color: #6B6B6B;
+    color: #959595;
     margin: 0;
 }
 
