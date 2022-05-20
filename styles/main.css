@@ -79,23 +79,23 @@ li {
 
 .top-right {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 1px;
     height: 100%;
-    min-width: 160px;
+    min-width: 153px;
     color: #999;
 }
 
 .top-right > ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     font-size: 13px;
 }
 
-.top-right .fa-magnifying-glass {
-    width: 14px;
+.top-right .fa-facebook-f {
+    width: 20px;
 }
 
 .top-right .fa-google-plus-g {
