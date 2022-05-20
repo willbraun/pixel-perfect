@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+.mobile {
+    display: none;
+}
+
 .container {
     position: absolute;
     width: 100vw;
     margin: auto;
-    height: 5134px;
+    min-height: 5134px;
     background-color: #F1F1F1;
 }
 
@@ -279,4 +283,40 @@ main > aside {
     position: relative;
     background-color: purple;
     height: 65px;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        height: 7862px;
+    }
+    
+    .nav-align {
+        width: 90%;
+    }
+
+    main {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 52px;
+    }
+
+    .nav-align {
+        display: none;
+    }
+
+    .mobile {
+        /* check other mobile elements for display block */
+        display: block;
+    }
+
+    .fa-bars {
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
 }
