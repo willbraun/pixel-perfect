@@ -316,7 +316,11 @@ main > aside {
 
     .fa-bars {
         position: absolute;
-        top: 0;
-        right: 10px;
+        top: 18px;
+        right: 46px;
+        transform: scale3d(1.58, 1.15, 1);
+        color: #757575;
+        
+        
     }
 }
