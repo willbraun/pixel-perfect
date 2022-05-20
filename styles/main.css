@@ -93,27 +93,27 @@ li {
     font-size: 13px;
 }
 
-.fa-magnifying-glass {
+.top-right .fa-magnifying-glass {
     width: 14px;
 }
 
-.fa-google-plus-g {
+.top-right .fa-google-plus-g {
     width: 36px;
 }
 
-.fa-pinterest {
+.top-right .fa-pinterest {
     width: 26px;
 }
 
-.fa-instagram {
+.top-right .fa-instagram {
     width: 26px;
 }
 
-.fa-twitter {
+.top-right .fa-twitter {
     width: 26px;
 }
 
-.fa-facebook-f {
+.top-right .fa-facebook-f {
     width: 26px;
 }
 
@@ -177,7 +177,7 @@ main > aside {
     height: 189px;
 }
 
-footer {
+.container > footer {
     position: relative;
     background-color: purple;
     height: 65px;
