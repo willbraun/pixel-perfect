@@ -253,7 +253,12 @@ main > aside {
 
 .author {
     position: relative;
-    height: 510px;
+    height: fit-content;
+    padding-bottom: 45px;
+}
+
+.background {
+    position: relative;
 }
 
 .portrait {
@@ -288,10 +293,6 @@ main > aside {
     line-height: 1.67;
     color: #343434;
 }
-
-/* .author > nav {
-    position: relative;
-} */
 
 .author ul {
     position: relative;
@@ -395,8 +396,6 @@ main > aside {
         width: 100%;
     }
 
-    
-
     main > article > .content {
         width: 390px;
         height: fit-content;
@@ -411,9 +410,31 @@ main > aside {
         line-height: 1.66;
     }
 
-    /* main > article {
-        min-height
-    } */
+    .author {
+        width: 100%;
+    }
 
-    /* main > aside */
+    .background {
+        width: 470px;
+        top: -2px;
+    }
+
+    .portrait {
+        top: 106.5px;
+        right: 143.5px;
+    }
+
+    .author > h4 {
+        margin: 56px auto 0;
+    }
+
+    .author > p {
+        margin: 20.5px auto 0;
+        width: 92%;
+    }
+
+    .author ul {
+        margin: 23px auto 0 137px;
+    }
+
 }
