@@ -332,7 +332,7 @@ h4 {
     font-size: 13px;
 }
 
-.popular-posts {
+main > aside:not(.author) {
     padding: 30px 30px 20px;
 }
 
@@ -364,10 +364,6 @@ h5 {
     position: relative;
     display: block;
     margin: 13.5px auto 0;
-}
-
-.latest-posts {
-    padding: 30px 30px 20px;
 }
 
 .latest-posts > h4 {
@@ -406,11 +402,22 @@ h5 {
     margin: 5.5px 0px 0 15px;
 }
 
-
-
-.instagram-feed {
-    height: 596px;
+.instagram-feed > h4 {
+    margin-bottom: 27px;
 }
+
+.instagram-pictures {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    margin-bottom: 15px;
+}
+
+.instagram-pictures img {
+    width: 100%
+}
+
 
 .bottom-images {
     position: relative;
@@ -528,5 +535,9 @@ h5 {
 
     .popular-posts img {
         width: 100%;
+    }
+
+    .instagram-pictures {
+        grid-gap: 16px;
     }
 }
