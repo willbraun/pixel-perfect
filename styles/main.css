@@ -325,16 +325,14 @@ main > aside {
 }
 
 .popular-posts {
-    height: 984px;
-    padding: 30px;
-
+    padding: 30px 30px 20px;
 }
 
 .popular-posts > h4 {
     position: relative;
     display: block;
     width: fit-content;
-    margin: 4px auto 0;
+    margin: 4px auto 7px;
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 18.5px;
@@ -342,8 +340,17 @@ main > aside {
     color: #343434;
 }
 
+.popular-posts > article {
+    height: fit-content;
+    margin-bottom: 18px;
+}
+
 .popular-posts > article > img {
-    margin: 27px auto 0;
+    padding-top: 20px;
+}
+
+.popular-posts > article:nth-child(n+3) > img {
+    border-top: 1px solid #DBDBDB;
 }
 
 .popular-posts > article > h5 {
@@ -353,6 +360,23 @@ main > aside {
     letter-spacing: 0.72px;
     margin: 12px auto 0;
     color: #343434;
+}
+
+.popular-posts > article > time {
+    position: relative;
+    display: block;
+    margin: 13.5px auto 0;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 13.5px;
+    font-style: italic;
+    letter-spacing: 0.25px;
+    color: #959595;
+}
+
+.popular-posts > article:nth-child(4) > img {
+    height: 222px;
+    width: 300px;
 }
 
 .latest-posts {
