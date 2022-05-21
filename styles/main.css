@@ -336,8 +336,6 @@ h4 {
     padding: 30px 30px 20px;
 }
 
-
-
 .popular-posts > article {
     margin-bottom: 18px;
 }
@@ -373,24 +371,34 @@ h5 {
 }
 
 .latest-posts > h4 {
-    margin: 4px auto 26px;
+    margin: 4px auto 11px;
+}
+
+.latest-posts > article {
+    clear: left;
+}
+
+.latest-posts > article:nth-child(n+3) {
+    border-top: 1px solid #DBDBDB;
 }
 
 .latest-posts img {
     float: left;
+    padding-top: 15px;
+    margin-bottom: 15px;
 }
 
 .latest-posts h5 {
     display: inline-block;
     width: fit-content;
-    margin: 3px 15px 0 15px;
+    margin: 18px 0px 0 15px;
     letter-spacing: 0.22px;
 }
 
 .latest-posts footer {
     display: inline-block;
     width: fit-content;
-    margin: 5px 15px 0 15px;
+    margin: 5.5px 0px 0 15px;
 }
 
 
