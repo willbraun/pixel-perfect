@@ -374,11 +374,6 @@ main > aside {
     color: #959595;
 }
 
-.popular-posts > article:nth-child(4) > img {
-    height: 222px;
-    width: 300px;
-}
-
 .latest-posts {
     height: 516px;
 }
@@ -469,7 +464,7 @@ main > aside {
         line-height: 1.66;
     }
 
-    .author {
+    main > aside {
         width: 100%;
     }
 
@@ -496,4 +491,11 @@ main > aside {
         margin: 23px auto 0 137px;
     }
 
+    .popular-posts > h4 {
+        margin: 4px auto 8px;
+    }
+
+    .popular-posts img {
+        width: 100%;
+    }
 }
