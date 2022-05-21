@@ -252,8 +252,18 @@ main > aside {
 }
 
 .author {
+    position: relative;
     height: 510px;
 }
+
+.portrait {
+    position: absolute;
+    top: 99px;
+    right: 88px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: auto;
+} 
 
 .popular-posts {
     height: 984px;
@@ -264,8 +274,6 @@ main > aside {
 .instagram-feed {
     height: 596px;
 }
-
-
 
 .bottom-images {
     position: relative;
