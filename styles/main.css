@@ -224,13 +224,16 @@ main > article footer {
     border-top: 1px solid #ECECEC;
 }
 
-main > article footer p {
-    position: absolute;
+article footer p, article footer > time{
     font-family: 'Lato';
     font-weight: 400;
     font-size: 14px;
     font-style: italic;
-    color: #959595;
+    color: #959595; 
+}
+
+main > article footer p {
+    position: absolute;
     margin: 0;
     top: 19px;
 }
@@ -277,14 +280,19 @@ main > aside {
     margin: auto;
 } 
 
-.author > h4 {
+h4 {
     position: relative;
     display: block;
     width: fit-content;
+    margin: 4px auto 7px;
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 18.5px;
     letter-spacing: 0.3px;
+    color: #343434;
+}
+
+.author > h4 {
     margin: 105px auto 0;
 }
 
@@ -328,20 +336,9 @@ main > aside {
     padding: 30px 30px 20px;
 }
 
-.popular-posts > h4 {
-    position: relative;
-    display: block;
-    width: fit-content;
-    margin: 4px auto 7px;
-    font-family: 'Oswald';
-    font-weight: 500;
-    font-size: 18.5px;
-    letter-spacing: 0.3px;
-    color: #343434;
-}
+
 
 .popular-posts > article {
-    height: fit-content;
     margin-bottom: 18px;
 }
 
@@ -353,30 +350,51 @@ main > aside {
     border-top: 1px solid #DBDBDB;
 }
 
-.popular-posts > article > h5 {
+h5 {
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 13.5px;
     letter-spacing: 0.72px;
-    margin: 12px auto 0;
     color: #343434;
 }
 
-.popular-posts > article > time {
+.popular-posts h5 {
+    margin: 12px auto 0;
+}
+
+.popular-posts > article time {
     position: relative;
     display: block;
     margin: 13.5px auto 0;
-    font-family: 'Lato';
-    font-weight: 400;
-    font-size: 13.5px;
-    font-style: italic;
-    letter-spacing: 0.25px;
-    color: #959595;
 }
 
 .latest-posts {
-    height: 516px;
+    padding: 30px 30px 20px;
 }
+
+.latest-posts > h4 {
+    margin: 4px auto 26px;
+}
+
+.latest-posts img {
+    float: left;
+}
+
+.latest-posts h5 {
+    display: inline-block;
+    width: fit-content;
+    margin: 3px 15px 0 15px;
+    letter-spacing: 0.22px;
+}
+
+.latest-posts footer {
+    display: inline-block;
+    width: fit-content;
+    margin: 5px 15px 0 15px;
+}
+
+
+
 .instagram-feed {
     height: 596px;
 }
