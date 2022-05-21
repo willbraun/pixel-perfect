@@ -265,6 +265,17 @@ main > aside {
     margin: auto;
 } 
 
+.author > h4 {
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 18.5px;
+    letter-spacing: 0.3px;
+    margin: 105px auto 0;
+}
+
 .popular-posts {
     height: 984px;
 }
