@@ -242,7 +242,7 @@ main > article footer ul {
 }
 
 main > aside {
-    background-color: aqua;
+    background-color: #fff;
     position: relative;
     width: 362px;
     border: 1px solid #E5E5E5;
@@ -274,6 +274,46 @@ main > aside {
     font-size: 18.5px;
     letter-spacing: 0.3px;
     margin: 105px auto 0;
+}
+
+.author > p {
+    position: relative;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 21px auto 0;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #343434;
+}
+
+/* .author > nav {
+    position: relative;
+} */
+
+.author ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+    margin: 23px auto 0 82px;
+}
+
+.author li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: #9A9A9A;
+}
+
+.author i {
+    font-size: 13px;
 }
 
 .popular-posts {
