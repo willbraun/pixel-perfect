@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .mobile {
     display: none;
 }
@@ -319,17 +326,33 @@ main > aside {
 
 .popular-posts {
     height: 984px;
+    padding: 30px;
+
 }
 
 .popular-posts > h4 {
     position: relative;
     display: block;
     width: fit-content;
-    margin: 34px auto 0;
+    margin: 4px auto 0;
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 18.5px;
     letter-spacing: 0.3px;
+    color: #343434;
+}
+
+.popular-posts > article > img {
+    margin: 27px auto 0;
+}
+
+.popular-posts > article > h5 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 13.5px;
+    letter-spacing: 0.72px;
+    margin: 12px auto 0;
+    color: #343434;
 }
 
 .latest-posts {
