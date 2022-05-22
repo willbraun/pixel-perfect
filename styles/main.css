@@ -250,11 +250,6 @@ main > article footer ul {
     justify-content: space-between;
 }
 
-.break-flex {
-    flex-basis: 100%;
-    min-width: 0;
-}
-
 main > aside {
     background-color: #fff;
     position: relative;
