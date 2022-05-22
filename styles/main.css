@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 100vw;
     margin: auto;
-    min-height: 5134px;
     background-color: #F1F1F1;
 }
 
@@ -138,7 +137,7 @@ main {
     width: 1142px;
     margin: auto;
     margin-top: 111px;
-    height: 4880px;
+    /* height: 4880px; */
 }
 
 main > article {
@@ -249,6 +248,11 @@ main > article footer nav {
 main > article footer ul {
     display: flex;
     justify-content: space-between;
+}
+
+.break-flex {
+    flex-basis: 100%;
+    min-width: 0;
 }
 
 main > aside {
@@ -418,11 +422,11 @@ h5 {
     width: 100%
 }
 
-
 .bottom-images {
     position: relative;
-    background-color: orange;
+    display: flex;
     height: 189px;
+    margin-top: 32px;
 }
 
 .container > footer {
@@ -432,10 +436,6 @@ h5 {
 }
 
 @media (max-width: 1140px) {
-    .container {
-        height: 7862px;
-    }
-    
     .nav-align {
         width: 90%;
     }
@@ -443,6 +443,7 @@ h5 {
     main {
         width: 90%;
         height: 100%;
+        align-items: center;
     }
 }
 
