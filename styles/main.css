@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .container {
     position: absolute;
     width: 100vw;
@@ -53,56 +57,55 @@ li {
     margin: auto;
 }
 
-.top-left {
+.menu {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    min-width: 317px;
-    color: #3C3C3C;
-}
-
-.top-left > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100%;
     font-family: 'Lato';
     font-weight: 700;
     font-size: 11px;
+    color: #3C3C3C;
 }
 
-.top-left li {
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
+.menu li {
     transition: var(--transition-time);
 }
 
-.top-left li:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+.top-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+    height: 100%;
+    width: 317.5px;
+    letter-spacing: 1px;
 }
 
 .portfolio {
     padding-right: 12px;
 }
 
-.top-right {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    height: 100%;
-    min-width: 152px;
-    color: #999;
-}
-
-.top-right > ul {
+.icon-row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 153px;
     font-size: 13px;
+    color: #999;
+    padding-right: 1px;
+}
+
+.menu li:not(:last-child):hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 i, .author li {
@@ -123,15 +126,11 @@ i:hover {
     cursor: pointer;
 }
 
-.top-right .fa-facebook-f {
-    margin-right: 10px;
+.icon-row .fa-facebook-f {
+    padding-right: 4px;
 }
 
-.top-right .fa-facebook-f {
-    margin-right: 3px;
-}
-
-.top-right .fa-magnifying-glass {
+.icon-row .fa-magnifying-glass {
     margin-left: 6px;
 }
 
@@ -500,9 +499,9 @@ h5 {
         height: 52px;
     }
 
-    .nav-align {
+    /* .nav-align {
         display: none;
-    }
+    } */
 
     .fa-bars {
         position: absolute;
@@ -510,6 +509,41 @@ h5 {
         right: 46px;
         transform: scale3d(1.58, 1.15, 1);
         color: #757575;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 52px;
+        top: 0;
+        left: 0;
+    }
+
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 8px 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+        overflow: hidden;
+      }
+
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);    
+    }
+
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     main {
