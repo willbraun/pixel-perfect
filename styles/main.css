@@ -487,6 +487,10 @@ h5 {
 }
 
 @media (max-width: 600px) {
+    button, .top-left, .icon-row, i:not(.fa-bars) {
+        pointer-events: none;
+    }
+    
     .mobile-show {
         display: block;
     }
@@ -499,9 +503,9 @@ h5 {
         height: 52px;
     }
 
-    /* .nav-align {
-        display: none;
-    } */
+    .nav-align {
+        width: 100%;
+    }
 
     .fa-bars {
         position: absolute;
@@ -512,24 +516,38 @@ h5 {
     }
 
     .menu {
+        display: block;
         position: absolute;
-        flex-direction: column;
+        height: fit-content;
         width: 100%;
-        margin-top: 52px;
+        margin-top: 51px;
         top: 0;
         left: 0;
+        overflow: hidden;
     }
 
-    .menu > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 8px 0;
+    .top-left {
+        position: relative;
+        display: block;
+        height: fit-content;
         width: 100%;
-        color: white;
-        background-color: #222;
-        overflow: hidden;
-      }
+        text-align: right;
+    }
+
+    .icon-row {
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    .mobile-background {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid #E1E1E1;
+    }
 
     #menu-toggle ~ .menu li {
         height: 0;
@@ -539,11 +557,19 @@ h5 {
         transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);    
     }
 
-    #menu-toggle:checked ~ .menu li {
-        border: 1px solid #333;
+    #menu-toggle:checked ~ .menu .top-left li {
+        border-bottom: 1px solid #E1E1E1;
         height: 2.5em;
         padding: 0.5em;
         transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: #fff;
+    }
+
+    #menu-toggle:checked ~ .menu .icon-row li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: transparent;
     }
 
     main {
