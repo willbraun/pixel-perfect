@@ -32,6 +32,10 @@ li {
     display: none;
 }
 
+.fa-x, .fa-x::before {
+    display: none;
+}
+
 .container {
     position: absolute;
     width: 100vw;
@@ -555,7 +559,7 @@ h5 {
         transition: 400ms cubic-bezier(0.23, 1, 0.32, 1);    
     }
 
-    #menu-toggle:checked ~ .menu-button-container .fa-x {
+    #menu-toggle:checked ~ .menu-button-container .fa-x, #menu-toggle:checked ~ .menu-button-container .fa-x::before {
         display: inline;
     }
 
