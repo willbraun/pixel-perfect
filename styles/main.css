@@ -131,16 +131,16 @@ li {
 main {
     position: relative;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
+    align-content: flex-start;
     width: 1142px;
     margin: auto;
     margin-top: 111px;
     /* height: 4880px; */
 }
 
-main > article {
+.wide-column > article {
     background-color: #fff;
     position: relative;
     width: 752px;
@@ -150,19 +150,19 @@ main > article {
     border-radius: 1px;
 }
 
-main > article:nth-child(2) > img {
+.wide-column > article:nth-child(2) > img {
     width: 750px;
     height: 472px;
 }
 
-main > article > .content {
+.wide-column > article > .content {
     position: relative;
     width: 670px;
     height: fit-content;
     margin: 41px auto;
 }
 
-main > article > .content > h3 {
+.wide-column > article > .content > h3 {
     position: relative;
     display: block;
     margin: 0px auto;
@@ -174,7 +174,7 @@ main > article > .content > h3 {
     color: #CF3D25;
 }
 
-main > article > .content > h2 {
+.wide-column > article > .content > h2 {
     position: relative;
     display: block;
     margin: 13px auto 0;
@@ -186,7 +186,7 @@ main > article > .content > h2 {
     letter-spacing: 0.5px;
 }
 
-main > article > .content > p {
+.wide-column > article > .content > p {
     position: relative;
     display: block;
     margin: 25px auto 0;
@@ -213,7 +213,7 @@ button {
     padding: 0 0 1px 0;
 }
 
-main > article footer {
+.wide-column > article footer {
     position: relative;
     width: 100%;
     height: 20px;
@@ -223,7 +223,7 @@ main > article footer {
     border-top: 1px solid #ECECEC;
 }
 
-article footer p, article footer > time{
+article footer p {
     font-family: 'Lato';
     font-weight: 400;
     font-size: 14px;
@@ -231,13 +231,13 @@ article footer p, article footer > time{
     color: #959595; 
 }
 
-main > article footer p {
+.wide-column > article footer p {
     position: absolute;
     margin: 0;
     top: 19px;
 }
 
-main > article footer nav {
+.wide-column > article footer nav {
     position: absolute;
     top: 23px;
     right: 0px;
@@ -245,12 +245,12 @@ main > article footer nav {
     color: #B5B5B5;
 }
 
-main > article footer ul {
+.wide-column > article footer ul {
     display: flex;
     justify-content: space-between;
 }
 
-main > aside {
+.side-column > aside {
     background-color: #fff;
     position: relative;
     width: 362px;
@@ -331,7 +331,7 @@ h4 {
     font-size: 13px;
 }
 
-main > aside:not(.author) {
+.side-column > aside:not(.author) {
     padding: 30px 30px 20px;
 }
 
@@ -359,10 +359,14 @@ h5 {
     margin: 12px auto 0;
 }
 
-.popular-posts > article time {
+.popular-posts > article p {
     position: relative;
     display: block;
     margin: 13.5px auto 0;
+}
+
+.latest-posts {
+    overflow: hidden;
 }
 
 .latest-posts > h4 {
@@ -390,12 +394,7 @@ h5 {
     letter-spacing: 0.22px;
 }
 
-.latest-posts h5::after {
-    content: '\A';
-    white-space: pre;
-}
-
-.latest-posts footer {
+.latest-posts footer p {
     display: inline-block;
     width: fit-content;
     margin: 5.5px 0px 0 15px;
@@ -469,36 +468,36 @@ h5 {
         width: 472px;
     }
 
-    main > article {
+    .wide-column > article {
         width: 100%;
         min-height: fit-content;
         margin-bottom: 49px;
     }
 
-    main > article > img {
+    .wide-column > article > img {
         width: 100%;
     }
 
-    main > article:nth-child(2) > img {
+    .wide-column > article:nth-child(2) > img {
         height: 296px;
         width: 100%;
     }
 
-    main > article > .content {
+    .wide-column > article > .content {
         width: 390px;
         height: fit-content;
         margin: 41px auto;
     }
 
-    main > article > .content > h2 {
+    .wide-column > article > .content > h2 {
         font-size: 21px;
     }
 
-    main > article > .content > p {
+    .wide-column > article > .content > p {
         line-height: 1.66;
     }
 
-    main > aside {
+    .side-column > aside {
         width: 100%;
     }
 
