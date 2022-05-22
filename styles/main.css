@@ -103,7 +103,7 @@ li {
     padding-right: 1px;
 }
 
-.menu li:not(:last-child):hover {
+.top-left li:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
