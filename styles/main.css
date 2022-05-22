@@ -161,7 +161,7 @@ main {
     margin: 41px auto;
 }
 
-.wide-column > article > .content > h3 {
+h3 {
     position: relative;
     display: block;
     margin: 0px auto;
@@ -173,7 +173,7 @@ main {
     color: #CF3D25;
 }
 
-.wide-column > article > .content > h2 {
+h2 {
     position: relative;
     display: block;
     margin: 13px auto 0;
@@ -418,14 +418,26 @@ h5 {
 .bottom-images {
     position: relative;
     display: flex;
-    height: 189px;
     margin-top: 32px;
 }
 
 .container > footer {
     position: relative;
-    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
     height: 65px;
+}
+
+.container > footer p {
+    width: fit-content;
+    padding-left: 14px;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 13.7px;
+    letter-spacing: 0.14px;
+    color: #757575;
 }
 
 @media (max-width: 1140px) {
