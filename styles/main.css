@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-inline-end: 0px;
 }
 
-.mobile {
+.mobile-show {
     display: none;
 }
 
@@ -137,7 +137,6 @@ main {
     width: 1142px;
     margin: auto;
     margin-top: 111px;
-    /* height: 4880px; */
 }
 
 .wide-column > article {
@@ -442,17 +441,20 @@ h5 {
 }
 
 @media (max-width: 600px) {
+    .mobile-show {
+        display: block;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+    
     header {
         height: 52px;
     }
 
     .nav-align {
         display: none;
-    }
-
-    .mobile {
-        /* check other mobile elements for display block */
-        display: block;
     }
 
     .fa-bars {
@@ -534,5 +536,10 @@ h5 {
 
     .instagram-pictures {
         grid-gap: 16px;
+    }
+
+    .bottom-images img {
+        height: 131px;
+        width: 125px;
     }
 }
